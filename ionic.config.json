@@ -1,0 +1,7 @@
+{
+  "name": "crud-task",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
