@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Form Edit Page</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label position="floating">Name</ion-label>
+          <ion-input value="{{person.name}}" [(ngModel)]="person.name" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Age</ion-label>
+          <ion-input value="{{person.age}}" [(ngModel)]="person.age" type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Nationality ID</ion-label>
+          <ion-input value="{{person.nationalityID}}" [(ngModel)]="person.nationalityID" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input value="{{person.birthDate}}" [(ngModel)]="person.birthDate" type="date" ></ion-input>
+        </ion-item>
+      </ion-list>
+      <div class="ion-text-center">
+        <ion-button (click)="updatePerson()">Update</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
